@@ -1,0 +1,4 @@
+Count: <%= @appointments.count%><br>
+<%@appointments.each do |appointment|%>
+  <b><%= appointment.created_at%></b> Physician:  <%= appointment.physician.name%> - Patient: <%= appointment.patient.name%><br>
+<%end%>
